@@ -53,11 +53,15 @@
 
 <h2>Adatok bekuldese</h2>
 <form action="/" method="POST">
-    <label for="name">Termekemv:</label>
-    <input type="text" id="prductname" name="product
-    name"><br><br>
+    <label for="name">Termeknev:</label>
+    <input type="text" id="prductname" name="productname"><br><br>
     <button type="submit" value="Submit"> Submit </button>
 </form>
+
+    {% if name %}
+        <h2>Bekuldott adat:</h2>
+        <p>Név: {{ name }}</p>
+    {% endif %}
   
 </body>
 </html>
