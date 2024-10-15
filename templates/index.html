@@ -58,9 +58,13 @@
     <button type="submit" value="Submit"> Submit </button>
 </form>
 
-    {% if name %}
+    {% if products_ %}
         <h2>Bekuldott adat:</h2>
-        <p>Név: {{ name }}</p>
+        <ul>
+        {% for product in products_%}
+            <li>{{ product }}</li>
+        {%- endfor %}
+    </ul>
     {% endif %}
   
 </body>
