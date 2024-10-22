@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztracios urlap</title>
+</head>
+<body>
+    <h1>Felhasznaloi regisztracio</h1>
+
+    <form action="/" method="post">
+        <label for="fullname">Teljes nev:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+        <!-- required = kotelezo elem -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="password">Jelszo:</label>
+        <input type="password" id="email" name="password" required><br><br>
+
+        <label for="phone">Telefonszam:</label>
+        <input type="tell" id="phone" name="phone"><br><br>
+
+        <label>Nem</label><br>
+        <input type="radio" id="gender" name="gender" value="male">
+        <label for="male">Ferfi</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">No</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Egyeb</label><br><br>
+
+        <label for="color">Kedvenc szin:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="profile-picture">Profilkep felotoltese:</label>
+        <input type="file" id="profilepicture" name="profilepicture"><br><br>
+
+        <label for="born-date">Szuletesi datum:</label>
+        <input type="date" id="born-date" name="born-date"><br><br>
+
+        <label for="actual-time">Aktualis ido:</label>
+        <input type="time" id="actual-time" name="actual-time"><br><br>
+        
+        <label for="interests">Erdeklodesi szint (1-100):</label>
+        <input type="range" id="interests" name="interests" min="1" max="100"><br>
+        
+
+        <input type="submit" value="Regisztracio">
+      </form>
+</body>
+</html>

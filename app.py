@@ -15,6 +15,9 @@ def submit_products():
     products.append(name)
     return redirect(url_for('index'))
 
+@app.route('/products')
+def get_products():
+    return render_template("products.html", products_ = products)
 
 
 
